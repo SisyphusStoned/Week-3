@@ -24,7 +24,6 @@ CREATE TABLE activities(
 CREATE TABLE companies (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT,
-  industries_id INTEGER
 );
 
 CREATE TABLE sales (
@@ -39,3 +38,7 @@ CREATE TABLE industries(
   name TEXT,
   );
 
+CREATE TABLE company_categories(
+  company_id INTEGER,
+  industries_id INTEGER,
+  );
